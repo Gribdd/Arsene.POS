@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsene.POS.UI", "Arsene.POS.UI\Arsene.POS.UI.csproj", "{3F48FD3E-DA01-4ABA-883B-C7C304EFC596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arsene.POS.ApiClient", "Arsene.POS.ApiClient\Arsene.POS.ApiClient.csproj", "{32831B9E-DC48-48DE-80D2-C8F646B29598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F48FD3E-DA01-4ABA-883B-C7C304EFC596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F48FD3E-DA01-4ABA-883B-C7C304EFC596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F48FD3E-DA01-4ABA-883B-C7C304EFC596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F48FD3E-DA01-4ABA-883B-C7C304EFC596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32831B9E-DC48-48DE-80D2-C8F646B29598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32831B9E-DC48-48DE-80D2-C8F646B29598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32831B9E-DC48-48DE-80D2-C8F646B29598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32831B9E-DC48-48DE-80D2-C8F646B29598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
