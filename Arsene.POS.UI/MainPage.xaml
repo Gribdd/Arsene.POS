@@ -35,6 +35,10 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="30">
+                <Button Command="{Binding NavigateToAddTodoPageCommand}" CommandParameter="" Text="Add"/>
+                <Button Text="Update" Grid.Column="1"/>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 

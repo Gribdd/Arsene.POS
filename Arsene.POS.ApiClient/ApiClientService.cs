@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Arsene.POS.ApiClient.Model;
 using System.Text.Json;
-using System.Threading.Tasks;
-using Arsene.POS.ApiClient.Model;
+using System.Text;
 
 namespace Arsene.POS.ApiClient
 {
@@ -24,6 +20,16 @@ namespace Arsene.POS.ApiClient
             response.EnsureSuccessStatusCode();
             var json = await response.Content.ReadAsStringAsync();
             return json;
+        }
+
+        public async Task<bool> AddTodoItem(TodoItem newItem)
+        {
+            var jsonContent = JsonSerializer.Serialize(newItem);
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            using HttpResponseMessage response = await _httpClient.PostAsync(_todoItemsEndpoint, content);
+
+            return response.IsSuccessStatusCode;
         }
 
     }

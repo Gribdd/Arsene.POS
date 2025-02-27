@@ -69,4 +69,10 @@
 	  <ProjectReference Include="..\Arsene.POS.ApiClient\Arsene.POS.ApiClient.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="View\AddTodoItem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

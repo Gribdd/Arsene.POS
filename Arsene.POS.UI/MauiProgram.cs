@@ -23,6 +23,7 @@ namespace Arsene.POS.UI
             builder.Logging.AddDebug();
 #endif
             builder.Services.AddTransient<MainPageViewModel>();
+            builder.Services.AddTransient<AddTodoItemViewModel>();
             return builder.Build();
         }
     }

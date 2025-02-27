@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Arsene.POS.UI.View.AddTodoItem"
+             xmlns:model="clr-namespace:Arsene.POS.UI.Model"
+             xmlns:vm="clr-namespace:Arsene.POS.UI.ViewModel"
+             x:DataType="vm:AddTodoItemViewModel"
+             Title="AddTodoItem">
+    <VerticalStackLayout Padding="20">
+        <Label Text="Add New Todo" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Enter Name" Text="{Binding TodoItem.Name}" />
+        <Entry Placeholder="Enter Notes" Text="{Binding TodoItem.Notes}" />
+
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Save" Command="{Binding AddTodoItemCommand}" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
